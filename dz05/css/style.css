@@ -22,7 +22,7 @@ h2 {
 h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     margin-top: 15%;
     margin-left: 15%;
 
@@ -46,6 +46,14 @@ a:hover {
     text-decoration: underline;
 }
 
+.bold_text {
+    font-weight: 700;
+}
+
+.through_text {
+    text-decoration: line-through;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -53,6 +61,8 @@ a:hover {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .container__header {
@@ -104,6 +114,7 @@ a:hover {
     flex-wrap: wrap;
     margin-top: 3%;
     margin-left: 12%;
+    width: 77%;
 }
 
 .container__content_text_first {
@@ -115,14 +126,30 @@ a:hover {
 }
 
 .container__content_text_second {
-
+    margin-top: 1%;
 }
 
 .container__content_text_third {
-
+    text-indent: 32px;
+    margin-top: 2%
 }
 
+.container__footer {
+    width: 65%;
+    background-size: 100%;
+    background-image: url(../img/bg.footer.png);
+    background-repeat: no-repeat;
+    margin-top: 2%;
+    margin-left: 12%;
+}
 
+.container__footer_text {
+    width: 33%;
+    padding-top: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+}
 
 
 
