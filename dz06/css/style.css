@@ -11,7 +11,8 @@ body {
 
 .header {
     display: flex;
-    width: 35%;
+    flex-wrap: wrap;
+    width: 55%;
     height: 50px;
     margin: 0 auto;
     justify-content: center;
@@ -20,9 +21,9 @@ body {
 
 .header__nav_register {
     display: flex;
-    background-color: #525252;
+    background-color: black;
     color: white;
-    padding: 30px 80px;
+    padding: 25px 80px;
     text-decoration: none;
     align-items: center;
     border-radius: 0 0 0 30px;
@@ -33,7 +34,7 @@ body {
     display: flex;
     background-color: black;
     color: white;
-    padding: 30px 80px;
+    padding: 25px 80px;
     text-decoration: none;
     align-items: center;
 }
@@ -42,12 +43,16 @@ body {
     display: flex;
     background-color: black;
     color: white;
-    padding: 30px 80px;
+    padding: 25px 80px;
     text-decoration: none;
     align-items: center;
     border-radius: 0 0 30px;
 }
 
-.header__nav_login:hover, .header__nav_search:hover {
+.header__nav_login:hover, .header__nav_register:hover, .header__nav_search:hover {
     background-color: #525252;
+}
+
+.header__image {
+    margin: 50px auto;
 }
