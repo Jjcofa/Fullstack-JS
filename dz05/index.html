@@ -1,87 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sunset</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="container__header">
-        <h1>This is <span class="bold_text">SUNSET</span> page</h1>
-        <img
-          class="container__header_sunset"
-          src="img/sunset 1.png"
-          alt="Sunset"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunset</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="header__heading">
+        This is <span class="header__heading--spec">SUNSET</span> page
+      </h1>
+      <div class="header__img-wrap">
+        <img src="img/sunset.png  " alt="sunset" />
       </div>
-      <div class="container__main">
-        <div class="container__main_text">
-          <h2>Sunset heading</h2>
-          <p class="container__main_text_first">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+    </header>
+    <main class="main">
+      <section class="section section--flx">
+        <div class="article">
+          <h2 class="article__heading">Sunset heading</h2>
+          <p class="article__item">
+            LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. Mauris
             augue dolor, mattis eu interdum in, interdum vitae massa. Nulla
-            congue ligula quis sollicitudin ultrices. Mauris commodo erat augue,
-            non volutpat velit volutpat nec. Pellentesque id odio blandit,
-            posuere est gravida, convallis nisl.
+            congue ligula quis sollicitudin ultrices. Mauris commodo erat
+            augue, non volutpat velit volutpat nec. Pellentesque id odio
+            blandit, posuere est gravida, convallis nisl. Phasellus ac nisi at
+            arcu iaculis semper non eu elit.
           </p>
-          <p class="container__main_text_second">
-            Phasellus ac nisi at arcu iaculis semper non eu elit. Phasellus
-            porttitor iaculis est sed pellentesque. Integer libero dui, congue
-            et metus ut, mattis auctor sem. Etiam gravida dui ut congue aliquam.
-            Maecenas ut enim felis.
+          <p>
+            Phasellus porttitor iaculis est sed pellentesque. Integer libero
+            dui, congue et metus ut, mattis auctor sem. Etiam gravida dui ut
+            congue aliquam. Maecenas ut enim felis.
           </p>
         </div>
-        <div class="container__main_link">
-          <h3>MENU</h3>
-          <ul>
-            <li><a href="">Link 1</a></li>
-            <li><a href="">Link 2</a></li>
-            <li><a href="">Link 3</a></li>
+        <div class="nav-wrap">
+          <h3 class="nav-heading">Menu</h3>
+          <ul class="nav">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Link 1</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Link 2</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Link 3</a>
+            </li>
           </ul>
         </div>
+      </section>
+      <section class="section--add">
+        <div class="article">
+          <h2 class="article__heading">Sunset heading</h2>
+          <p class="article__item">
+            <span class="article__text--spec">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+            Mauris augue dolor, mattis eu interdum in, interdum vitae massa.
+            Nulla congue ligula quis sollicitudin ultrices. Mauris commodo
+            erat augue, non volutpat velit volutpat nec. Pellentesque id odio
+            blandit, posuere est gravida, convallis nisl.
+            <span class="article__text--mod">
+              Phasellus ac nisi at arcu iaculis semper non eu elit.
+            </span>
+            <br />
+            Phasellus porttitor iaculis est sed pellentesque. Integer libero
+            dui, congue et metus ut, mattis auctor sem. Etiam gravida dui ut
+            congue aliquam. Maecenas ut enim felis. Donec dignissim tempor
+            enim. Nunc faucibus a leo nec congue. Sed tellus diam, aliquam id
+            lectus fermentum,
+            <span class="article__text--add"> laoreet rhoncus erat.</span>
+          </p>
+          <p class="article__item">
+            Mauris gravida convallis auctor. Nulla facilisi. Suspendisse
+            potenti. Nullam iaculis ornare arcu ut dignissim. Sed est urna,
+            condimentum id massa eu, fringilla imperdiet purus. Praesent nec
+            arcu a est convallis condimentum. In turpis tellus, sagittis
+            finibus mi sit amet, ornare vulputate ante.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__line">
+        <p class="footer__item">
+          <span class="footer__item--spec">2023</span> by
+          <span class="footer__item--spec">Serge Nikiforov</span> - Design for
+          students
+        </p>
       </div>
-      <div class="container__content">
-        <h2>Sunset heading</h2>
-        <p class="container__content_text_first">
-          LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. Mauris augue
-          dolor, mattis eu interdum in, interdum vitae massa. Nulla congue
-          ligula quis sollicitudin ultrices. Mauris commodo erat augue, non
-          volutpat velit volutpat nec. Pellentesque id odio blandit, posuere est
-          gravida, convallis nisl.
-          <span class="content_text_first_red">
-            Phasellus ac nisi at arcu iaculis semper non eu elit.</span
-          >
-        </p>
-        <p class="container__content_text_second">
-          Phasellus porttitor iaculis est sed pellentesque. Integer libero dui,
-          congue et metus ut, mattis auctor sem. Etiam gravida dui ut congue
-          aliquam. Maecenas ut enim felis. Donec dignissim tempor enim. Nunc
-          faucibus a leo nec congue. Sed tellus diam, aliquam id lectus
-          fermentum, <span class="through_text">laoreet rhoncus erat.</span>
-        </p>
-        <p class="container__content_text_third">
-          Mauris gravida convallis auctor. Nulla facilisi. Suspendisse potenti.
-          Nullam iaculis ornare arcu ut dignissim. Sed est urna, condimentum id
-          massa eu, fringilla imperdiet purus. Praesent nec arcu a est convallis
-          condimentum. In turpis tellus, sagittis finibus mi sit amet, ornare
-          vulputate ante.
-        </p>
-      </div>
-      <div class="container__footer">
-        <p class="container__footer_text">
-          <span class="bold_text">2023</span> by
-          <span class="bold_text">Serge Nikiforov</span> - Design for students
-        </p>
-      </div>
-    </div>
-  </body>
+    </footer>
+  </div>
+</body>
 </html>
