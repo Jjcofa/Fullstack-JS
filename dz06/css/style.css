@@ -60,7 +60,8 @@ body {
 .search {
     display: flex;
     flex-direction: row;
-    width: 66%;
+    flex-wrap: wrap;
+    width: 70%;
     margin: 50px auto;
     justify-content: center;
 }
@@ -72,4 +73,81 @@ body {
     border-radius: 15px;
     padding-left: 14px;
     margin: 20px 30px;
+}
+
+.search__group--condition {
+    display: flex;
+    width: 598px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin: 20px 30px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.search__group--condition-add {
+    margin: 0 15px;
+}
+
+.search__group--year {
+    width: 190px;
+    height: 50px;
+    font-size: 20px;
+    margin: 30px 0 0 20px;
+}
+
+.search__group--year-add {
+    width: 100px;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.search__group--price {
+    height: 50px;
+    font-size: 20px;
+    margin: 30px 0 0 20px;
+    padding-left: 14px;
+}
+
+.search__group--price-add {
+    width: 100px;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.search__group--btn {
+    width: 270px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 14px;
+    margin-top: 100px;
+    color: white;
+    background-color: black;
+}
+
+.search__group--btn:hover {
+    background: #525252;
+    box-shadow: 12px 12px 5px black;
+}
+
+.footer {
+    display: flex;
+    width: 600px;
+    margin: 180px auto;
+    justify-content: center;
+}
+
+.footer__item-add {
+    font-weight: 700;
 }

@@ -19,7 +19,6 @@
             <img class="header__image" src="img/search.png" alt="search">
         </header>
         <form action="https://fom.in.ua/echo" method="post" class="search">
-            <div>
                 <select class="search__group" name="body-type">
                     <option value="#">Тип кузова</option>
                     <option value="Седан">Седан</option>
@@ -47,7 +46,50 @@
                     <option value="Дизель">Дизель</option>
                     <option value="Електро">Електро</option>
                 </select>
+                <select class="search__group" name="features-type">
+                    <option value="#">Особливості</option>
+                    <option value="Люк">Люк</option>
+                    <option value="Шкір. салон">Шкіряний салон</option>
+                </select>
+                <select class="search__group" name="color-type">
+                    <option value="#">Колір</option>
+                    <option value="Чорний">Чорний</option>
+                    <option value="Білий">Білий</option>
+                    <option value="Червоний">Червоний</option>
+                    <option value="Синій">Синій</option>
+                </select>
+                <select class="search__group" name="kpp-type">
+                    <option value="#">КПП</option>
+                    <option value="Механіка">Механіка</option>
+                    <option value="Автомат">Автомат</option>
+                </select>
+                <div class="search__group--condition">
+                    <label>Стан:</label>
+                    <input class="search__group--condition-add" type="checkbox" name="condition" value="Бита"> Бита
+                    <input class="search__group--condition-add" type="checkbox" name="condition" value="У кредиті"> У кредиті
+                    <input class="search__group--condition-add" type="checkbox" name="condition" value="Нерозмитнена"> Нерозмитнена
+                </div>
+                <div class="search__group--year">
+                    <label>Рік від:</label>
+                    <input class="search__group--year-add" type="number" name="year-from">
+                </div>
+                <div class="search__group--year">       
+                    <label>до:</label>
+                    <input class="search__group--year-add" type="number" name="year-to">
+                </div>
+                <div class="search__group--price">
+                    <label>Ціна від:</label>
+                    <input class="search__group--price-add" type="number" name="price-from">
+                </div>
+                <div class="search__group--price">       
+                    <label>до:</label>
+                    <input class="search__group--price-add" type="number" name="price-to">
+                </div>
+                <input class="search__group--btn" type="submit" value="Пошук">
         </form>
+        <footer class="footer">
+            <p class="footer__item">Designed by <span class="footer__item-add">Bohdan Kovalenko</span> for <span class="footer__item-add">Hillel</span></p>
+        </footer>
     </div>
 </body>
 </html>
