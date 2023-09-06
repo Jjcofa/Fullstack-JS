@@ -198,3 +198,50 @@ body {
 .link__login:hover {
     font-weight: 700;
 }
+
+.login {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 100px auto;
+    justify-content: center;
+}
+
+.login__group {
+    width: 270px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding-left: 14px;
+    margin: 25px 80px 25px 80px;
+}
+
+.login__group--btn {
+    width: 270px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 50px;
+    color: white;
+    background-color: #34A432;
+}
+
+.login__group--btn:hover {
+    background-color: #568255;
+    box-shadow: 12px 12px 5px grey;
+}
+
+.link__register {
+    display: flex;
+    width: 140px;
+    justify-content: center;
+    margin: -85px auto 0 auto;
+    color: black;
+}
+
+.link__register:hover {
+    font-weight: 700;
+}
