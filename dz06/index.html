@@ -16,8 +16,8 @@
             <a href="pages/register.html" class="header__nav_register">Реєстрація</a>
             <a href="pages/login.html" class="header__nav_login">Авторизація</a>
             <a href="#" class="header__nav_search">Пошук</a>
-            <img class="header__image" src="img/search.png" alt="search">
         </header>
+        <img class="header__image" src="img/search.png" alt="search">
         <form action="https://fom.in.ua/echo" method="post" class="search">
                 <select class="search__group" name="body-type">
                     <option value="#">Тип кузова</option>
@@ -58,10 +58,13 @@
                     <option value="Червоний">Червоний</option>
                     <option value="Синій">Синій</option>
                 </select>
-                <select class="search__group" name="kpp-type">
-                    <option value="#">КПП</option>
-                    <option value="Механіка">Механіка</option>
-                    <option value="Автомат">Автомат</option>
+                    <div class="search__group--kpp">
+                        <p>КПП:</p>
+                        <input type="radio" name="kpp-type" value="Автомат" class="search__group--kpp-add">
+                        <label>Автомат</label><br>
+                        <input type="radio" name="kpp-type" value="Механіка" class="search__group--kpp-add">
+                        <label>Механіка</label><br>  
+                    </div>
                 </select>
                 <div class="search__group--condition">
                     <label>Стан:</label>
@@ -71,15 +74,15 @@
                 </div>
                 <div class="search__group--year">
                     <label>Рік від:</label>
-                    <input class="search__group--year-add" type="number" name="year-from">
+                    <input class="search__group--year-add" type="number" name="year-from" min="1980">
                 </div>
                 <div class="search__group--year">       
                     <label>до:</label>
-                    <input class="search__group--year-add" type="number" name="year-to">
+                    <input class="search__group--year-add" type="number" name="year-to" max="2023">
                 </div>
                 <div class="search__group--price">
                     <label>Ціна від:</label>
-                    <input class="search__group--price-add" type="number" name="price-from">
+                    <input class="search__group--price-add" type="number" name="price-from" min="0">
                 </div>
                 <div class="search__group--price">       
                     <label>до:</label>

@@ -16,13 +16,13 @@
             <a href="#" class="header__nav_register">Реєстрація</a>
             <a href="login.html" class="header__nav_login">Авторизація</a>
             <a href="../index.html" class="header__nav_search">Пошук</a>
-            <img class="header__image" src="../img/register.png" alt="search">
         </header>
+        <img class="header__image" src="../img/register.png" alt="search">
         <form action="https://fom.in.ua/echo" method="post" class="register">
-            <input type="text" name="login" placeholder="Логин" class="register__group">
-            <input type="password" name="password" placeholder="Пароль" class="register__group">
-            <input type="email" name="email" placeholder="Email" class="register__group">
-            <input type="password" name="password_confirm" placeholder="Підтвердити пароль" class="register__group">
+            <input type="text" name="login" placeholder="Логин" class="register__group" required>
+            <input type="password" name="password" placeholder="Пароль" class="register__group" required minlength="8">
+            <input type="email" name="email" placeholder="Email" class="register__group" required>
+            <input type="password" name="password_confirm" placeholder="Підтвердити пароль" class="register__group" required minlength="8">
             <input class="register__group--btn" type="submit" value="Реєстрація">
         </form>
         <a href="login.html" class="link__login">Вже є аккаунт</a>
