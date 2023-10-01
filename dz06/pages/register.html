@@ -19,10 +19,14 @@
         </header>
         <img class="header__image" src="../img/register.png" alt="search">
         <form action="https://fom.in.ua/echo" method="post" class="register">
-            <input type="text" name="login" placeholder="Логин" class="register__group" required>
-            <input type="password" name="password" placeholder="Пароль" class="register__group" required minlength="8">
-            <input type="email" name="email" placeholder="Email" class="register__group" required>
-            <input type="password" name="password_confirm" placeholder="Підтвердити пароль" class="register__group" required minlength="8">
+            <div class="group__wrapper">
+                <input type="text" name="login" placeholder="Логин" class="register__group" required>
+                <input type="password" name="password" placeholder="Пароль" class="register__group" required minlength="8">
+            </div>
+            <div class="group__wrapper">
+                <input type="email" name="email" placeholder="Email" class="register__group" required>
+                <input type="password" name="password_confirm" placeholder="Підтвердити пароль" class="register__group" required minlength="8">
+            </div>
             <input class="register__group--btn" type="submit" value="Реєстрація">
         </form>
         <a href="login.html" class="link__login">Вже є аккаунт</a>

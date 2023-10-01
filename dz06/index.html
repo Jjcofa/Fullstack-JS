@@ -19,76 +19,85 @@
         </header>
         <img class="header__image" src="img/search.png" alt="search">
         <form action="https://fom.in.ua/echo" method="post" class="search">
-                <select class="search__group" name="body-type">
-                    <option value="#">Тип кузова</option>
-                    <option value="Седан">Седан</option>
-                    <option value="Хетчбек">Хетчбек</option>
-                    <option value="Купе">Купе</option>
-                </select>
-                <select class="search__group" name="brand-type">
-                    <option value="#">Марка</option>
-                    <option value="Audi">Audi</option>
-                    <option value="BMW">BMW</option>
-                    <option value="Mazda">Mazda</option>
-                    <option value="Mercedes">Mercedes-Benz</option>
-                </select>
-                <select class="search__group" name="country-type">
-                    <option value="#">Країна</option>
-                    <option value="Японія">Японія</option>
-                    <option value="Німеччина">Німеччина</option>
-                    <option value="США">США</option>
-                    <option value="Корея">Корея</option>
-                    <option value="Франція">Франція</option>
-                </select>
-                <select class="search__group" name="fuel-type">
-                    <option value="#">Тип палива</option>
-                    <option value="Бензин">Бензин</option>
-                    <option value="Дизель">Дизель</option>
-                    <option value="Електро">Електро</option>
-                </select>
-                <select class="search__group" name="features-type">
-                    <option value="#">Особливості</option>
-                    <option value="Люк">Люк</option>
-                    <option value="Шкір. салон">Шкіряний салон</option>
-                </select>
-                <select class="search__group" name="color-type">
-                    <option value="#">Колір</option>
-                    <option value="Чорний">Чорний</option>
-                    <option value="Білий">Білий</option>
-                    <option value="Червоний">Червоний</option>
-                    <option value="Синій">Синій</option>
-                </select>
-                    <div class="search__group--kpp">
-                        <p>КПП:</p>
-                        <input type="radio" name="kpp-type" value="Автомат" class="search__group--kpp-add">
-                        <label>Автомат</label><br>
-                        <input type="radio" name="kpp-type" value="Механіка" class="search__group--kpp-add">
-                        <label>Механіка</label><br>  
+                <div class="group__wrapper">
+                    <select class="search__group" name="body-type">
+                        <option value="#">Тип кузова</option>
+                        <option value="Седан">Седан</option>
+                        <option value="Хетчбек">Хетчбек</option>
+                        <option value="Купе">Купе</option>
+                    </select>
+                    <select class="search__group" name="brand-type">
+                        <option value="#">Марка</option>
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mazda">Mazda</option>
+                        <option value="Mercedes">Mercedes-Benz</option>
+                    </select>
+                    <select class="search__group" name="country-type">
+                        <option value="#">Країна</option>
+                        <option value="Японія">Японія</option>
+                        <option value="Німеччина">Німеччина</option>
+                        <option value="США">США</option>
+                        <option value="Корея">Корея</option>
+                        <option value="Франція">Франція</option>
+                    </select>
+                </div>
+                <div class="group__wrapper">
+                    <select class="search__group" name="fuel-type">
+                        <option value="#">Тип палива</option>
+                        <option value="Бензин">Бензин</option>
+                        <option value="Дизель">Дизель</option>
+                        <option value="Електро">Електро</option>
+                    </select>
+                    <select class="search__group" name="features-type">
+                        <option value="#">Особливості</option>
+                        <option value="Люк">Люк</option>
+                        <option value="Шкір. салон">Шкіряний салон</option>
+                    </select>
+                    <select class="search__group" name="color-type">
+                        <option value="#">Колір</option>
+                        <option value="Чорний">Чорний</option>
+                        <option value="Білий">Білий</option>
+                        <option value="Червоний">Червоний</option>
+                        <option value="Синій">Синій</option>
+                    </select>
+                </div>
+                    <div class="group__wrapper">
+                        <div class="search__group--kpp">
+                            <p>КПП:</p>
+                            <input type="radio" name="kpp-type" value="Автомат" class="search__group--kpp-add">
+                            <label>Автомат</label><br>
+                            <input type="radio" name="kpp-type" value="Механіка" class="search__group--kpp-add">
+                            <label>Механіка</label><br>  
+                        </div>
+                    <div class="search__group--condition">
+                        <label>Стан:</label>
+                        <input class="search__group--condition-add" type="checkbox" name="condition" value="Бита"> Бита
+                        <input class="search__group--condition-add" type="checkbox" name="condition" value="У кредиті"> У кредиті
+                        <input class="search__group--condition-add" type="checkbox" name="condition" value="Нерозмитнена"> Нерозмитнена
                     </div>
-                </select>
-                <div class="search__group--condition">
-                    <label>Стан:</label>
-                    <input class="search__group--condition-add" type="checkbox" name="condition" value="Бита"> Бита
-                    <input class="search__group--condition-add" type="checkbox" name="condition" value="У кредиті"> У кредиті
-                    <input class="search__group--condition-add" type="checkbox" name="condition" value="Нерозмитнена"> Нерозмитнена
+                    </div>
+                <div class="group__wrapper">
+                    <div class="search__group--year">
+                        <label>Рік від:</label>
+                        <input class="search__group--year-add" type="number" name="year-from" min="1980">
+                    </div>
+                    <div class="search__group--year">       
+                        <label>до:</label>
+                        <input class="search__group--year-add" type="number" name="year-to" min="1980" max="2023">
+                    </div>
+                    <div class="search__group--price">
+                        <label>Ціна від:</label>
+                        <input class="search__group--price-add" type="number" name="price-from" min="0">
+                    </div>
+                    <div class="search__group--price">       
+                        <label>до:</label>
+                        <input class="search__group--price-add" type="number" name="price-to" min="0">
+                    </div>
                 </div>
-                <div class="search__group--year">
-                    <label>Рік від:</label>
-                    <input class="search__group--year-add" type="number" name="year-from" min="1980">
+                <div class="group__wrapper">
+                    <input class="search__group--btn" type="submit" value="Пошук">
                 </div>
-                <div class="search__group--year">       
-                    <label>до:</label>
-                    <input class="search__group--year-add" type="number" name="year-to" max="2023">
-                </div>
-                <div class="search__group--price">
-                    <label>Ціна від:</label>
-                    <input class="search__group--price-add" type="number" name="price-from" min="0">
-                </div>
-                <div class="search__group--price">       
-                    <label>до:</label>
-                    <input class="search__group--price-add" type="number" name="price-to">
-                </div>
-                <input class="search__group--btn" type="submit" value="Пошук">
         </form>
         <footer class="footer">
             <p class="footer__item">Designed by <span class="footer__item-add">Bohdan Kovalenko</span> for <span class="footer__item-add">Hillel</span></p>
