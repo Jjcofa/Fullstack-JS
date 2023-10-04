@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    margin-left: 1%;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.header__nav-item {
+    margin-right: 20px;
+}
+
+.header__nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__nav-link:hover {
+    transition: color 0.4s ease-in-out;
+    color: #ff9900;
+} 
+
+.header__dropdown {
+    position: relative;
+
+}
+
+.header__dropdown-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.header__dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.header__dropdown-item {
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    padding: 15px 5px;
+    display: block;
+}
+
+.header__dropdown-item:hover {
+    background-color: #ddd;
+}
+
+.header__dropdown:hover .header__dropdown-content {
+    display: block;
+}
+
+.header__dropdown:hover .header__dropdown-btn {
+    background-color: #555;
+}
+
+.main {
+    margin-top: 5%;
+}
+
+.main .section {
+    margin-bottom: 5%;
+}
+
+.section__image {
+    margin-top: 1%;
+    max-width: 100%; 
+    height: auto;
+}
+
+.section__title {
+    padding-top: 6%;
+    margin-bottom: 1%;
+}
+
+.section__content {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.7%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* ВТОРАЯ СТРАНИЦА */
+
+.product-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    text-align: center;
+    margin: 20px;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.product-card__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card__title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-card__description {
+    margin-bottom: 10px;
+}
+
+.product-card__button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product-card__button:hover {
+    background-color: #ff9900;
+}
